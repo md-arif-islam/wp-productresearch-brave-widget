@@ -1,0 +1,174 @@
+#main {
+  margin: 50px 0;
+}
+
+#main #faq .card {
+  margin-bottom: 15px;
+  border: 0;
+}
+
+#main #faq .card .card-header {
+  border: 0;
+  padding: 0;
+  border-radius: 0;
+}
+
+#main #faq .card .card-header .btn-header-link {
+  color: #fff;
+  border-radius: 0;
+  display: block;
+  text-align: left;
+  background: #fff;
+  color: #222;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+  text-align: left;
+}
+
+#main #faq .card .card-header .btn-header-link:after {
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f107";
+  position: absolute;
+  top: 50%;
+  right: 0.8rem;
+  transform: translateY(-50%);
+  display: block;
+  font-size: 1.5rem;
+}
+
+#main #faq .card .card-header .btn-header-link.collapsed:after {
+  content: "\f106";
+}
+
+#main #faq .card .collapsing {
+  background: #fff;
+  line-height: 30px;
+}
+
+#main #faq .card .collapse {
+  border: 0;
+}
+
+#main #faq .card .collapse.show {
+  background: #fff;
+  line-height: 30px;
+  color: #222;
+}
+
+.criteria__item--row {
+  justify-content: center;
+  align-items: center;
+}
+
+.criteria__item--row h3 {
+  color: #fff;
+  padding: 10px 30px;
+  background: #6700ff;
+  text-align: center;
+  border-radius: 15px;
+  margin: 0;
+  font-size: 14px;
+}
+
+.average__score--title {
+  display: flex;
+  align-items: center;
+}
+
+.average__score--title h1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.average__score--title h2 {
+  background: red;
+  color: #fff;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 50px;
+}
+.average__score--btns {
+  display: flex;
+  justify-content: end;
+}
+
+.average__score--btns a {
+  padding: 10px 40px;
+  border-radius: 25px;
+  margin: 0 15px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.average__score--btns a i {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.average__score--btns a.save {
+  background-color: #e3deff;
+  color: #000;
+}
+
+.average__score--btns a.share {
+  background-color: #6700ff;
+  color: #fff;
+}
+
+.overview__item .overview__item--title {
+  display: inline-block;
+}
+
+.overview__item .overview__item--title img {
+  width: 50px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.overview__item .overview__item--title span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.overview__item--list ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.color {
+  display: inline-block;
+  padding: 5px;
+  background-color: #ccc; /* Set default background color */
+  position: relative; /* Add relative positioning */
+}
+
+.color::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: green; /* Set background color for value greater than 50 */
+  opacity: 0; /* Set opacity to 0 by default */
+  z-index: -1;
+}
+
+.color[data-value^="5"]::after,
+.color[data-value^="6"]::after,
+.color[data-value^="7"]::after,
+.color[data-value^="8"]::after,
+.color[data-value^="9"]::after {
+  opacity: 1; /* Set opacity to 1 for value greater than 50 */
+}
